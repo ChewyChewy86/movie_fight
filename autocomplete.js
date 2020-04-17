@@ -36,7 +36,7 @@ const createAutoComplete = ({
       option.addEventListener("click", () => {
         dropdown.classList.remove("is-active");
         input.value = inputValue(item);
-        onMovieSelect(item);
+        onOptionSelect(item);
       });
 
       resultsWrapper.appendChild(option);
@@ -51,4 +51,5 @@ const createAutoComplete = ({
     }
   });
 };
+
 
